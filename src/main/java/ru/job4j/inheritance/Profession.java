@@ -1,0 +1,35 @@
+package ru.job4j.inheritance;
+
+public class Profession {
+    private String name;
+    private String surname;
+    private String education;
+    private String birthday;
+
+    public Profession(String name, String surname, String education, String birthday) {
+        this.name = name;
+        this.surname = surname;
+        this.birthday = birthday;
+        this.education = education;
+    }
+
+    public Profession(){
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public String getEducation() {
+        return education;
+    }
+}
