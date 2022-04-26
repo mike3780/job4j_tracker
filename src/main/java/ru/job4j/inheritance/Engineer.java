@@ -1,6 +1,6 @@
 package ru.job4j.inheritance;
 
-public class Engineer extends Profession{
+public class Engineer extends Profession {
     private String specialization;
 
     public Engineer(String name, String surname, String education, String birthday, String specialization) {
@@ -8,5 +8,5 @@ public class Engineer extends Profession{
         this.specialization = specialization;
     }
 
-    public void design() {}
+    public void design() { }
 }
