@@ -13,10 +13,6 @@ public class Profession {
         this.education = education;
     }
 
-    public Profession() {
-
-    }
-
     public String getName() {
         return name;
     }
