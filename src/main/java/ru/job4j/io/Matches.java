@@ -13,18 +13,16 @@ public class Matches {
             String player = turn ? "Первый игрок" : "Второй игрок";
             System.out.println(player + " введите число от 1 до 3:");
             int matches = Integer.parseInt(input.nextLine());
-            turn = !turn;
             if (matches >= 1 && matches <= 3) {
                 if (count >= matches) {
+                    turn = !turn;
                     count -= matches;
                     System.out.println("На столе осталось " + count + " спичек");
                 } else {
-                						System.out.println("Введите число не большее количества оставшихся спичек:");
-                						turn = !turn;
-            						}
+                    System.out.println("Введите число не большее количества оставшихся спичек:");
+                }
             } else {
                 System.out.println("За один ход взять можно 1, 2 или 3 спички");
-                						turn = !turn;
             }
         }
         if (!turn) {
@@ -33,5 +31,4 @@ public class Matches {
             System.out.println("Выиграл второй игрок");
         }
     }
-    
 }
