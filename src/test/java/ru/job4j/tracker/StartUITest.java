@@ -64,7 +64,7 @@ public class StartUITest {
         Output out = new StubOutput();
         Tracker tracker = new Tracker();
         Item one = tracker.add(new Item("Test10"));
-        Input in = new StubInput(new String[] {"0", String.valueOf(one.getName()), "1"});
+        Input in = new StubInput(new String[] {"0", one.getName(), "1"});
         UserAction[] actions = new UserAction[] {
                 new FindByNameAction(out),
                 new Exit(out)
